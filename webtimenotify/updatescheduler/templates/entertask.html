@@ -1,0 +1,59 @@
+{% load staticfiles %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}">
+	<title>EnterTask</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="generator" content="Geany 1.23.1" />
+</head>
+
+<body>
+	<form class="form-horizontal">
+		<fieldset>
+
+			<!-- Form Name -->
+			<legend>Task Configuration</legend>
+
+			<!-- Text input-->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="textinput">Transaction ID</label>  
+			  <div class="col-md-4">
+			  <input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md">
+			  <span class="help-block">Trasaction ID From Email</span>  
+			  </div>
+			</div>
+
+			<!-- Text input-->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="hourscount">Hours</label>  
+			  <div class="col-md-4">
+			  <input id="hourscount" name="hourscount" type="text" placeholder="" class="form-control input-md">
+			  <span class="help-block">Enter Number of Hours to Enter</span>  
+			  </div>
+			</div>
+
+			<!-- Select Basic -->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="entryname">Entry In</label>
+			  <div class="col-md-4">
+				<select id="entryname" name="entryname" class="form-control">
+				  <option value="1">Entry 1</option>
+				  <option value="2">Entry 2</option>
+				</select>
+			  </div>
+			</div>
+
+			<!-- Button -->
+			<div class="form-group">
+			  <div class="col-md-8">
+				<button id="submitbutton" name="submitbutton" class="btn btn-primary pull-right">Submit</button>
+			  </div>
+			</div>
+		</fieldset>
+	</form>
+</body>
+
+</html>
