@@ -7,3 +7,5 @@ class UpdateEvent(models.Model):
 	transaction_id = models.CharField(max_length=100)
 	no_of_hours = models.IntegerField(default=0)
 	job_number_choice = models.IntegerField(default=0)
+	month_choice = models.IntegerField(default=1)
+	day_choice = models.IntegerField(default=1)
